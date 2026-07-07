@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="InAmigos Foundation - Empowering communities through education, women empowerment, environmental conservation, food distribution, animal welfare and skill development. Join us in building a better tomorrow.">
+  <meta name="keywords" content="NGO, InAmigos Foundation, charity, education, women empowerment, environment, volunteer, community service, social impact">
+  <meta name="author" content="InAmigos Foundation">
+  <title>InAmigos Foundation — Together We Can Build A Better Tomorrow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION
+  ============================================= -->
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo" aria-label="InAmigos Foundation Home">
+        <svg class="logo-icon" viewBox="0 0 40 40" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="20" cy="20" r="18" fill="var(--primary-green)" opacity="0.15"/>
+          <path d="M20 8C14 8 10 14 10 20C10 26 14 32 20 32C22 28 24 24 24 20C24 14 22 8 20 8Z" fill="var(--primary-green)" opacity="0.7"/>
+          <path d="M20 8C26 8 30 14 30 20C30 26 26 32 20 32C18 28 16 24 16 20C16 14 18 8 20 8Z" fill="var(--primary-green)"/>
+          <path d="M20 10V30" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+          <path d="M16 16C18 16 20 14 20 14C20 14 22 16 24 16" stroke="white" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.5"/>
+          <path d="M15 22C17.5 21 20 19 20 19C20 19 22.5 21 25 22" stroke="white" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.5"/>
+        </svg>
+        <span class="logo-text">In<span class="logo-highlight">Amigos</span></span>
+      </a>
+
+      <!-- Mobile Nav Toggle (CSS-only checkbox hack) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#impact" class="nav-link">Impact</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#volunteer" class="nav-link">Volunteer</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#volunteer" class="nav-link nav-cta">Join Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============================================
+       HERO SECTION — IMAGE CAROUSEL
+  ============================================= -->
+  <section class="hero" id="home">
+    <!-- Slider Track (slides horizontally) -->
+    <div class="hero-slider" id="heroSlider">
+      <div class="hero-slider-track" id="heroSliderTrack">
+        <div class="hero-slide">
+          <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1920&q=80" alt="Happy children smiling together representing hope and community" class="hero-slide-img">
+        </div>
+        <div class="hero-slide">
+          <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1920&q=80" alt="Children raising hands in a classroom during an education program" class="hero-slide-img">
+        </div>
+        <div class="hero-slide">
+          <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1920&q=80" alt="Volunteers working together for community service" class="hero-slide-img">
+        </div>
+        <div class="hero-slide">
+          <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1920&q=80" alt="Young plant seedlings symbolizing environmental conservation" class="hero-slide-img">
+        </div>
+        <div class="hero-slide">
+          <img src="https://images.unsplash.com/photo-1607748862156-7c548e7e98f4?auto=format&fit=crop&w=1920&q=80" alt="Women participating in empowerment and skill development" class="hero-slide-img">
+        </div>
+        <div class="hero-slide">
+          <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1920&q=80" alt="Food distribution drive helping families in need" class="hero-slide-img">
+        </div>
+      </div>
+    </div>
+
+    <!-- Dark Overlay (above slides, below text) -->
+    <div class="hero-overlay"></div>
+
+    <!-- Fixed Hero Content -->
+    <div class="hero-content container">
+      <p class="hero-tagline">Welcome to InAmigos Foundation</p>
+      <h1 class="hero-heading">Together We Can Build<br>A Better Tomorrow</h1>
+      <p class="hero-subheading">Empowering communities through education, women empowerment, environmental conservation, food distribution, animal welfare and skill development.</p>
+      <div class="hero-buttons">
+        <a href="#volunteer" class="btn btn-primary">Join Us</a>
+        <a href="#about" class="btn btn-secondary">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button class="hero-arrow hero-arrow-prev" id="heroPrev" aria-label="Previous slide">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18L9 12L15 6"/></svg>
+    </button>
+    <button class="hero-arrow hero-arrow-next" id="heroNext" aria-label="Next slide">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6L15 12L9 18"/></svg>
+    </button>
+
+    <!-- Pagination Dots -->
+    <div class="hero-dots" id="heroDots">
+      <button class="hero-dot active" data-slide="0" aria-label="Go to slide 1"></button>
+      <button class="hero-dot" data-slide="1" aria-label="Go to slide 2"></button>
+      <button class="hero-dot" data-slide="2" aria-label="Go to slide 3"></button>
+      <button class="hero-dot" data-slide="3" aria-label="Go to slide 4"></button>
+      <button class="hero-dot" data-slide="4" aria-label="Go to slide 5"></button>
+      <button class="hero-dot" data-slide="5" aria-label="Go to slide 6"></button>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+  <main>
+    <!-- ============================================
+         ABOUT SECTION
+    ============================================= -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1497375638960-ca368c7231e4?auto=format&fit=crop&w=800&q=80" 
+              alt="Volunteers teaching children in a community classroom setting" 
+              class="about-image"
+              loading="lazy"
+            >
+            <div class="about-image-accent"></div>
+          </div>
+          <div class="about-content">
+            <p class="section-label">Who We Are</p>
+            <h2 class="section-title">About InAmigos Foundation</h2>
+            <p class="about-text">
+              InAmigos Foundation is a passionate nonprofit organization committed to transforming lives across India. Born from a belief that every individual deserves access to basic necessities, quality education, and equal opportunities, we work tirelessly to bridge the gap between privilege and need.
+            </p>
+            <p class="about-text">
+              Our dedicated network of volunteers spans across the nation, driving impactful programs in <strong>education for underprivileged children</strong>, <strong>food and clothing distribution</strong>, <strong>women empowerment</strong>, <strong>animal welfare</strong>, <strong>environmental conservation</strong>, and <strong>skill development</strong>. We believe in creating sustainable change through community-driven initiatives that uplift and empower.
+            </p>
+            <div class="about-highlights">
+              <div class="about-highlight-item">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="var(--primary-green)" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+                <span>Education</span>
+              </div>
+              <div class="about-highlight-item">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="var(--primary-green)" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+                <span>Food Distribution</span>
+              </div>
+              <div class="about-highlight-item">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="var(--primary-green)" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+                <span>Women Empowerment</span>
+              </div>
+              <div class="about-highlight-item">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="var(--primary-green)" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+                <span>Animal Welfare</span>
+              </div>
+              <div class="about-highlight-item">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="var(--primary-green)" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+                <span>Environment</span>
+              </div>
+              <div class="about-highlight-item">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="var(--primary-green)" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+                <span>Skill Development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         MISSION & VISION
+    ============================================= -->
+    <section class="section mission-vision">
+      <div class="container">
+        <div class="mv-grid">
+          <article class="mv-card">
+            <div class="mv-icon">
+              <svg viewBox="0 0 48 48" width="48" height="48" fill="none" aria-hidden="true">
+                <circle cx="24" cy="24" r="22" stroke="var(--primary-green)" stroke-width="2.5" fill="none"/>
+                <circle cx="24" cy="24" r="14" stroke="var(--primary-green)" stroke-width="2" fill="none" opacity="0.6"/>
+                <circle cx="24" cy="24" r="6" fill="var(--primary-green)"/>
+              </svg>
+            </div>
+            <h3 class="mv-title">Our Mission</h3>
+            <p class="mv-text">
+              To empower underprivileged communities by providing access to quality education, essential resources, and sustainable opportunities. We strive to create a society where every individual can lead a life of dignity, equality, and purpose through compassionate action and collaborative community partnerships.
+            </p>
+          </article>
+          <article class="mv-card">
+            <div class="mv-icon">
+              <svg viewBox="0 0 48 48" width="48" height="48" fill="none" aria-hidden="true">
+                <path d="M24 4L28 16H40L30 24L34 36L24 28L14 36L18 24L8 16H20L24 4Z" fill="var(--primary-green)" opacity="0.2" stroke="var(--primary-green)" stroke-width="2"/>
+                <circle cx="24" cy="22" r="5" fill="var(--primary-green)"/>
+              </svg>
+            </div>
+            <h3 class="mv-title">Our Vision</h3>
+            <p class="mv-text">
+              To build an India where no child goes without education, no family sleeps hungry, and every woman has the power to shape her own future. We envision thriving communities that are self-sustaining, environmentally conscious, and united in their commitment to collective growth and social harmony.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         OUR PROJECTS
+    ============================================= -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <p class="section-label text-center">What We Do</p>
+        <h2 class="section-title text-center">Our Projects</h2>
+        <p class="section-subtitle text-center">Each initiative is designed to address critical social challenges and create lasting positive change in communities across India.</p>
+        
+        <div class="projects-grid">
+          <!-- Seva -->
+          <article class="project-card">
+            <div class="project-image-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=600&q=80" 
+                alt="Volunteers distributing food and essential supplies to people in need" 
+                class="project-image"
+                loading="lazy"
+              >
+              <div class="project-category">Community Service</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Seva</h3>
+              <p class="project-description">Organizing regular food and clothing distribution drives across communities, ensuring that basic necessities reach those who need them most during times of hardship.</p>
+              <a href="#" class="project-link">
+                Read More
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Bachpanshala -->
+          <article class="project-card">
+            <div class="project-image-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80" 
+                alt="Young children studying together in a bright learning environment" 
+                class="project-image"
+                loading="lazy"
+              >
+              <div class="project-category">Education</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Bachpanshala</h3>
+              <p class="project-description">Providing free quality education to underprivileged children through community learning centers, mentorship programs, and access to essential educational resources.</p>
+              <a href="#" class="project-link">
+                Read More
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Jeev -->
+          <article class="project-card">
+            <div class="project-image-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=600&q=80" 
+                alt="Animal Welfare - Rescued animals receiving care from compassionate volunteers" 
+                class="project-image"
+                loading="lazy"
+              >
+              <div class="project-category">Animal Welfare</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Jeev</h3>
+              <p class="project-description">Rescuing and rehabilitating stray and injured animals while conducting awareness campaigns promoting compassion, responsible care, and coexistence with all living beings.</p>
+              <a href="#" class="project-link">
+                Read More
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Udaan -->
+          <article class="project-card">
+            <div class="project-image-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=80" 
+                alt="Confident woman professional representing women empowerment and skill development" 
+                class="project-image"
+                loading="lazy"
+              >
+              <div class="project-category">Empowerment</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Udaan</h3>
+              <p class="project-description">Empowering women through vocational training, financial literacy workshops, and entrepreneurship support — helping them become self-reliant leaders in their communities.</p>
+              <a href="#" class="project-link">
+                Read More
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Prakriti -->
+          <article class="project-card">
+            <div class="project-image-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80" 
+                alt="Young plant seedling growing in rich soil symbolizing environmental conservation" 
+                class="project-image"
+                loading="lazy"
+              >
+              <div class="project-category">Environment</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Prakriti</h3>
+              <p class="project-description">Leading environmental conservation through large-scale plantation drives, clean-up campaigns, and sustainability awareness programs to protect our planet for future generations.</p>
+              <a href="#" class="project-link">
+                Read More
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Vikas -->
+          <article class="project-card">
+            <div class="project-image-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80" 
+                alt="Group of young adults participating in a professional skill development workshop" 
+                class="project-image"
+                loading="lazy"
+              >
+              <div class="project-category">Skill Development</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Vikas</h3>
+              <p class="project-description">Bridging the employment gap through structured skill development programs, career counseling, and industry partnerships that open doors to dignified livelihoods.</p>
+              <a href="#" class="project-link">
+                Read More
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SOCIAL IMPACT
+    ============================================= -->
+    <section class="section impact" id="impact">
+      <div class="impact-overlay"></div>
+      <div class="container">
+        <p class="section-label text-center light">Our Reach</p>
+        <h2 class="section-title text-center light">Social Impact</h2>
+        <div class="impact-grid">
+          <article class="impact-card">
+            <span class="impact-number">200+</span>
+            <span class="impact-label">Volunteers</span>
+            <div class="impact-bar"></div>
+          </article>
+          <article class="impact-card">
+            <span class="impact-number">28</span>
+            <span class="impact-label">States</span>
+            <div class="impact-bar"></div>
+          </article>
+          <article class="impact-card">
+            <span class="impact-number">6</span>
+            <span class="impact-label">Major Projects</span>
+            <div class="impact-bar"></div>
+          </article>
+          <article class="impact-card">
+            <span class="impact-number">50000+</span>
+            <span class="impact-label">Beneficiaries</span>
+            <div class="impact-bar"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         WHY CHOOSE US
+    ============================================= -->
+    <section class="section why-us">
+      <div class="container">
+        <p class="section-label text-center">Our Values</p>
+        <h2 class="section-title text-center">Why Choose Us</h2>
+        <p class="section-subtitle text-center">Our commitment to transparency, community empowerment, and sustainable change sets us apart.</p>
+        
+        <div class="why-grid">
+          <article class="why-card">
+            <div class="why-icon">
+              <svg viewBox="0 0 48 48" width="44" height="44" fill="none" aria-hidden="true">
+                <path d="M24 42S6 28 6 18C6 10 12 4 18 4C21 4 23.5 5.5 24 8C24.5 5.5 27 4 30 4C36 4 42 10 42 18C42 28 24 42 24 42Z" fill="var(--primary-green)" opacity="0.15" stroke="var(--primary-green)" stroke-width="2.5" stroke-linejoin="round"/>
+                <path d="M16 20L22 26L32 16" stroke="var(--primary-green)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="why-title">Helping Communities</h3>
+            <p class="why-text">We work directly with grassroots communities across India, understanding their unique needs and delivering tailored programs that drive real, measurable change.</p>
+          </article>
+          <article class="why-card">
+            <div class="why-icon">
+              <svg viewBox="0 0 48 48" width="44" height="44" fill="none" aria-hidden="true">
+                <rect x="6" y="12" width="36" height="28" rx="4" fill="var(--primary-green)" opacity="0.15" stroke="var(--primary-green)" stroke-width="2.5"/>
+                <path d="M6 20H42" stroke="var(--primary-green)" stroke-width="2.5"/>
+                <circle cx="24" cy="30" r="5" stroke="var(--primary-green)" stroke-width="2" fill="none"/>
+                <path d="M22 30L23.5 31.5L26 28.5" stroke="var(--primary-green)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 8V12M30 8V12" stroke="var(--primary-green)" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="why-title">Transparency</h3>
+            <p class="why-text">Every donation is accounted for. We maintain complete financial transparency, providing regular updates and detailed reports so you always know where your support goes.</p>
+          </article>
+          <article class="why-card">
+            <div class="why-icon">
+              <svg viewBox="0 0 48 48" width="44" height="44" fill="none" aria-hidden="true">
+                <circle cx="24" cy="14" r="8" fill="var(--primary-green)" opacity="0.15" stroke="var(--primary-green)" stroke-width="2.5"/>
+                <path d="M10 40C10 33 16 28 24 28C32 28 38 33 38 40" stroke="var(--primary-green)" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="38" cy="18" r="5" fill="var(--primary-green)" opacity="0.15" stroke="var(--primary-green)" stroke-width="2"/>
+                <circle cx="10" cy="18" r="5" fill="var(--primary-green)" opacity="0.15" stroke="var(--primary-green)" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="why-title">Dedicated Volunteers</h3>
+            <p class="why-text">Our strength lies in our passionate volunteer network — driven individuals who devote their time, skills, and energy to making a tangible difference in the lives of others.</p>
+          </article>
+          <article class="why-card">
+            <div class="why-icon">
+              <svg viewBox="0 0 48 48" width="44" height="44" fill="none" aria-hidden="true">
+                <path d="M24 44C24 44 20 36 20 28C20 22 16 18 16 12C16 6 20 4 24 4C28 4 32 6 32 12C32 18 28 22 28 28C28 36 24 44 24 44Z" fill="var(--primary-green)" opacity="0.15" stroke="var(--primary-green)" stroke-width="2.5" stroke-linejoin="round"/>
+                <path d="M24 18V26" stroke="var(--primary-green)" stroke-width="2" stroke-linecap="round"/>
+                <path d="M18 32C20 30 22 29 24 29C26 29 28 30 30 32" stroke="var(--primary-green)" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="why-title">Sustainable Impact</h3>
+            <p class="why-text">We don't just provide temporary relief — we build lasting solutions. Our programs are designed for long-term sustainability, empowering communities to thrive independently.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         IMAGE GALLERY
+    ============================================= -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <p class="section-label text-center">Moments That Matter</p>
+        <h2 class="section-title text-center">Our Gallery</h2>
+        <p class="section-subtitle text-center">A glimpse into the lives we've touched and the communities we've uplifted together.</p>
+        
+        <div class="gallery-grid">
+          <!-- 1. Education (Tall) -->
+          <div class="gallery-item gallery-item-tall">
+            <img src="images/gallery/education-tall.jpg" alt="Children raising hands enthusiastically in a classroom during Bachpanshala education program" class="gallery-image" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Bachpanshala - Education</span>
+            </div>
+          </div>
+          
+          <!-- 2. Food Distribution -->
+          <div class="gallery-item">
+            <img src="images/gallery/food-distribution.jpg" alt="Volunteers distributing food to children and families in need for Seva initiative" class="gallery-image" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Seva - Food Distribution</span>
+            </div>
+          </div>
+          
+          <!-- 3. Women Empowerment -->
+          <div class="gallery-item">
+            <img src="images/gallery/women-empowerment.jpg" alt="Women participating in an empowerment and skill development workshop for Udaan" class="gallery-image" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Udaan - Women Empowerment</span>
+            </div>
+          </div>
+          
+          <!-- 4. Tree Plantation (Wide) -->
+          <div class="gallery-item gallery-item-wide">
+            <img src="images/gallery/tree-plantation-wide.jpg" alt="Young saplings planted as part of Prakriti tree plantation and environmental conservation drive" class="gallery-image" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Prakriti - Tree Plantation</span>
+            </div>
+          </div>
+          
+          <!-- 5. Community Service -->
+          <div class="gallery-item">
+            <img src="images/gallery/community-service.jpg" alt="Volunteers coming together for a community service project" class="gallery-image" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Community Service</span>
+            </div>
+          </div>
+          
+          <!-- 6. Animal Welfare (Tall) -->
+          <div class="gallery-item gallery-item-tall">
+            <img src="images/gallery/animal-welfare-tall.jpg" alt="Rescued dog receiving care and love from a volunteer under Jeev initiative" class="gallery-image" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Jeev - Animal Welfare</span>
+            </div>
+          </div>
+          
+          <!-- 7. Skill Development -->
+          <div class="gallery-item">
+            <img src="images/gallery/skill-development.jpg" alt="Group of young adults participating in a professional skill development workshop for Vikas" class="gallery-image" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Vikas - Skill Development</span>
+            </div>
+          </div>
+          
+          <!-- 8. Volunteers -->
+          <div class="gallery-item">
+            <img src="images/gallery/volunteers.jpg" alt="Group of happy volunteers taking a picture together" class="gallery-image" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Our Dedicated Volunteers</span>
+            </div>
+          </div>
+          
+          <!-- 9. Social Awareness (Wide) -->
+          <div class="gallery-item gallery-item-wide">
+            <img src="images/gallery/social-awareness-wide.jpg" alt="People holding hands together supporting a social awareness campaign" class="gallery-image" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Social Awareness Campaigns</span>
+            </div>
+          </div>
+          
+          <!-- 10. Education Resources -->
+          <div class="gallery-item">
+            <img src="images/gallery/education-resources.jpg" alt="Books and educational materials representing our commitment to learning" class="gallery-image" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Educational Resources</span>
+            </div>
+          </div>
+          
+          <!-- 11. Environment Protection -->
+          <div class="gallery-item">
+            <img src="images/gallery/environment-protection.jpg" alt="A young plant growing in soil held by caring hands" class="gallery-image" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Environment Protection</span>
+            </div>
+          </div>
+          
+          <!-- 12. Women Entrepreneurship (Tall) -->
+          <div class="gallery-item gallery-item-tall">
+            <img src="images/gallery/women-entrepreneurship-tall.jpg" alt="Confident woman professional representing women empowerment and entrepreneurship" class="gallery-image" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Women Entrepreneurship</span>
+            </div>
+          </div>
+          
+          <!-- 13. Animal Rescue -->
+          <div class="gallery-item">
+            <img src="images/gallery/animal-rescue.jpg" alt="Veterinarian examining a rescued animal at a shelter" class="gallery-image" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Animal Rescue & Rehab</span>
+            </div>
+          </div>
+          
+          <!-- 14. Food Relief -->
+          <div class="gallery-item">
+            <img src="images/gallery/food-relief.jpg" alt="Volunteers distributing essential food supplies to community members" class="gallery-image" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Food Relief Drives</span>
+            </div>
+          </div>
+          
+          <!-- 15. Health Camp -->
+          <div class="gallery-item">
+            <img src="images/gallery/health-camp.jpg" alt="Doctor examining a patient at a community health camp" class="gallery-image" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Community Health Support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         TESTIMONIALS
+    ============================================= -->
+    <section class="section testimonials">
+      <div class="container">
+        <p class="section-label text-center">Voices of Change</p>
+        <h2 class="section-title text-center">What Our Volunteers Say</h2>
+        
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div class="testimonial-quote" aria-hidden="true">&ldquo;</div>
+            <p class="testimonial-text">Volunteering with InAmigos has been one of the most fulfilling experiences of my life. Teaching children at Bachpanshala and seeing their faces light up with curiosity gives me a sense of purpose that nothing else can match. This foundation truly changes lives.</p>
+            <div class="testimonial-author">
+              <img 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&crop=face&q=80" 
+                alt="Portrait of Rahul Sharma, a volunteer with InAmigos Foundation" 
+                class="testimonial-avatar"
+                loading="lazy"
+              >
+              <div class="testimonial-info">
+                <strong class="testimonial-name">Rahul Sharma</strong>
+                <span class="testimonial-role">Education Volunteer</span>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card testimonial-featured">
+            <div class="testimonial-quote" aria-hidden="true">&ldquo;</div>
+            <p class="testimonial-text">What sets InAmigos apart is their genuine commitment to sustainable impact. Every project is thoughtfully designed and executed with care. Being part of the Prakriti initiative has deepened my connection with environmental conservation and shown me what collective action can achieve.</p>
+            <div class="testimonial-author">
+              <img 
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&crop=face&q=80" 
+                alt="Portrait of Priya Menon, a volunteer coordinator at InAmigos Foundation" 
+                class="testimonial-avatar"
+                loading="lazy"
+              >
+              <div class="testimonial-info">
+                <strong class="testimonial-name">Priya Menon</strong>
+                <span class="testimonial-role">Volunteer Coordinator</span>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-quote" aria-hidden="true">&ldquo;</div>
+            <p class="testimonial-text">I joined InAmigos during a food distribution drive and never looked back. The warmth, organization, and sheer dedication of every volunteer here is inspiring. They make you feel like you're part of something much bigger than yourself — a real family working for a better world.</p>
+            <div class="testimonial-author">
+              <img 
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&h=150&crop=face&q=80" 
+                alt="Portrait of Arjun Patel, a community outreach volunteer" 
+                class="testimonial-avatar"
+                loading="lazy"
+              >
+              <div class="testimonial-info">
+                <strong class="testimonial-name">Arjun Patel</strong>
+                <span class="testimonial-role">Community Outreach Volunteer</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CALL TO ACTION
+    ============================================= -->
+    <section class="section cta" id="volunteer">
+      <div class="container">
+        <div class="cta-content">
+          <h2 class="cta-heading">Become A Volunteer Today</h2>
+          <p class="cta-text">Your small contribution can create a big difference in someone's life. Join our growing family of changemakers and help us build a more compassionate, educated, and sustainable world — one community at a time.</p>
+          <a href="#contact" class="btn btn-cta">Join Our Mission</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================
+       FOOTER
+  ============================================= -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Logo & Description -->
+        <div class="footer-about">
+          <a href="#home" class="footer-logo" aria-label="InAmigos Foundation Home">
+            <svg class="logo-icon" viewBox="0 0 40 40" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="20" cy="20" r="18" fill="var(--primary-green)" opacity="0.15"/>
+              <path d="M20 8C14 8 10 14 10 20C10 26 14 32 20 32C22 28 24 24 24 20C24 14 22 8 20 8Z" fill="var(--primary-green)" opacity="0.7"/>
+              <path d="M20 8C26 8 30 14 30 20C30 26 26 32 20 32C18 28 16 24 16 20C16 14 18 8 20 8Z" fill="var(--primary-green)"/>
+              <path d="M20 10V30" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+            </svg>
+            <span class="logo-text">In<span class="logo-highlight">Amigos</span></span>
+          </a>
+          <p class="footer-description">Empowering communities, transforming lives. InAmigos Foundation is dedicated to creating sustainable social impact through education, service, and compassion.</p>
+          <div class="social-links">
+            <!-- Facebook -->
+            <a href="#" class="social-link" aria-label="Follow us on Facebook">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z"/></svg>
+            </a>
+            <!-- Twitter / X -->
+            <a href="#" class="social-link" aria-label="Follow us on Twitter">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <!-- Instagram -->
+            <a href="#" class="social-link" aria-label="Follow us on Instagram">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="#" class="social-link" aria-label="Follow us on LinkedIn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <!-- YouTube -->
+            <a href="#" class="social-link" aria-label="Subscribe on YouTube">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links-group">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Us</a></li>
+            <li><a href="#projects" class="footer-link">Our Projects</a></li>
+            <li><a href="#impact" class="footer-link">Social Impact</a></li>
+            <li><a href="#gallery" class="footer-link">Gallery</a></li>
+            <li><a href="#volunteer" class="footer-link">Volunteer</a></li>
+          </ul>
+        </div>
+
+        <!-- Projects -->
+        <div class="footer-links-group">
+          <h3 class="footer-heading">Our Projects</h3>
+          <ul class="footer-list">
+            <li><a href="#projects" class="footer-link">Seva</a></li>
+            <li><a href="#projects" class="footer-link">Bachpanshala</a></li>
+            <li><a href="#projects" class="footer-link">Jeev</a></li>
+            <li><a href="#projects" class="footer-link">Udaan</a></li>
+            <li><a href="#projects" class="footer-link">Prakriti</a></li>
+            <li><a href="#projects" class="footer-link">Vikas</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-links-group">
+          <h3 class="footer-heading">Contact Us</h3>
+          <ul class="footer-list footer-contact">
+            <li>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="var(--primary-green)" aria-hidden="true"><path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" fill="none" stroke="var(--primary-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 6L12 13L2 6" fill="none" stroke="var(--primary-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <a href="mailto:info@inamigos.org" class="footer-link">info@inamigos.org</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="var(--primary-green)" aria-hidden="true"><path d="M22 16.92V19.92C22 20.48 21.56 20.93 21 20.97C20.74 20.99 20.48 21 20.22 21C10.96 21 3.42 13.46 3.03 4.22C3.01 3.66 3.46 3.19 4.02 3.17H7.02C7.56 3.17 8.02 3.58 8.07 4.12C8.11 4.59 8.19 5.06 8.31 5.51C8.45 6.04 8.31 6.6 7.93 6.99L6.65 8.27C8.06 10.96 10.21 13.11 12.9 14.52L14.18 13.24C14.57 12.86 15.13 12.72 15.66 12.86C16.11 12.98 16.58 13.06 17.05 13.1C17.59 13.15 18 13.61 18 14.15V16.92C18 17.49 17.58 17.97 17.02 18.02C16.37 18.07 15.73 18.1 15.08 18.1" fill="none" stroke="var(--primary-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <a href="tel:+911234567890" class="footer-link">+91 12345 67890</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="var(--primary-green)" aria-hidden="true"><path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10Z" fill="none" stroke="var(--primary-green)" stroke-width="2"/><circle cx="12" cy="10" r="3" fill="none" stroke="var(--primary-green)" stroke-width="2"/></svg>
+              <span class="footer-address">New Delhi, India</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="footer-copyright">&copy; 2025 InAmigos Foundation. All Rights Reserved. Made with 
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="var(--primary-green)" aria-hidden="true" style="vertical-align: -2px;"><path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.04L12 21.35Z"/></svg>
+            for a better tomorrow.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slider JavaScript (minimal vanilla JS for carousel control only) -->
+  <script src="js/slider.js"></script>
+</body>
+</html>
